@@ -22,12 +22,13 @@
     justify-content: center;
 }
 
-.logo {
+.user-logo {
     font-size: 30px;
     border-radius: 50%;
+    color: #1a1b27;
 }
 
-.logo:hover {
+.user-logo:hover {
     opacity: 0.7;
 }
 
