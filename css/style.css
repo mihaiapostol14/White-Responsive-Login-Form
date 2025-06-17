@@ -1,3 +1,7 @@
+:root{
+    --user-logo-color: #551A8B;;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap");
 
 * {
@@ -22,13 +26,12 @@
     justify-content: center;
 }
 
-.user-logo {
+.logo {
     font-size: 30px;
     border-radius: 50%;
-    color: #1a1b27;
 }
 
-.user-logo:hover {
+.logo:hover {
     opacity: 0.7;
 }
 
@@ -77,6 +80,10 @@ body {
     padding-top: 3rem;
 }
 
+.logo-box .user-logo{
+    color: var(--user-logo-color);
+}
+
 .sub-form {
     display: flex;
     flex-direction: column;
@@ -95,7 +102,16 @@ body {
 }
 
 .input-box{
+    position: relative;
     margin-bottom: 8px;
+}
+
+.input-box .eye{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: var(--user-logo-color);
+    cursor: pointer;
 }
 
 .input-box label {
